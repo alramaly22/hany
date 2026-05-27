@@ -25,10 +25,10 @@ let lang = {
         pricingtitle: "الأسعار",
 
         pricingtitle1: "باقة البداية",
-        pricingpackage1: "شهر / 79$",
+        pricingpackage1: "شهر / 50$",
 
         pricingtitle2: "باقة التحول",
-        pricingpackage2: "3 أشهر / 149$",
+        pricingpackage2: "3 أشهر / 100$",
 
         pricingtitle3: "التدريب الشخصي",
         pricingpackage3: "1500 ريال / شهريًا",
@@ -230,7 +230,7 @@ let lang = {
         pricingtitle: "Pricing",
 
         pricingtitle1: "STARTER PACKAGE",
-        pricingpackage1: "1 Month / $79",
+        pricingpackage1: "1 Month / $50",
 
         pricingtitle2: "TRANSFORMATION PACKAGE",
         pricingpackage2: "3 Months / $149",
