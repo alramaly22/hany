@@ -203,8 +203,8 @@
           </div>
 
           <div class="home__images66">
-            <img src="images/testo/blackpp2.jpeg" alt="" />
-            <img src="images/testo/blackpp4.jpeg" alt="" />
+            <img src="{% static 'images/testo/last1.jpeg' %}" alt="" />
+            <img src="{% static 'images/testo/blackpp4.jpeg' %}" alt="" />
           </div>
         </div>
       </section>
@@ -253,7 +253,7 @@
           <div class="featured__swiper swiper">
             <div class="swiper-wrapper">
               <article class="featured__card swiper-slide">
-                <img src=" {% static 'images/testo/blackpp2.jpeg' %}" class="featured__img" />
+                <img src="{% static 'images/testo/last1.jpeg' %}" class="featured__img" />
 
                 <h2 data-lang="featuredbook1" class="features__title">
                   Recipe Mastery Book
@@ -272,7 +272,7 @@
               </article>
 
               <article class="featured__card swiper-slide">
-                <img src=" {% static 'images/testo/last.jpeg' %}" class="featured__img" />
+                <img src=" {% static 'images/testo/blackpp2.jpeg' %}" class="featured__img" />
 
                 <h2 data-lang="featuredbook2" class="features__title">
                   Ultimate Supplements Guide
@@ -347,7 +347,7 @@
             class="button button__flex pricing__button"
             data-book="Recipe Mastery Book"
             data-description="Choose your preferred language and instantly receive the recipe book after completing your payment."
-            data-ar="https://app.fawaterk.com/paymentRequest/show/40533"
+            data-ar="https://app.fawaterk.com/paymentRequest/show/40575"
             data-en="https://app.fawaterk.com/paymentRequest/show/40532"
             data-lang="purchaseBtn">
             Purchase Now
@@ -455,7 +455,7 @@
     <!-- Logo -->
     <div class="col">
       <a href="{% url 'index' %}">
-        <img src="images/testo/logo.png" alt="Hany Logo" class="logo" />
+        <img src="{% static 'images/testo/logo.png' %}" alt="Hany Logo" class="logo" />
       </a>
 
       <p data-lang="footerp">
