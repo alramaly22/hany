@@ -163,7 +163,7 @@ let lang = {
 
         book1title: "كتاب احتراف الوصفات الصحية",
 
-        book1li1: "أكثر من 100 وصفة عالية البروتين لنتائج حقيقية",
+        book1li1: "أكثر من 50 وصفة عالية البروتين لنتائج حقيقية",
         book1li2: "وجبات سهلة لخسارة الدهون وبناء العضلات",
         book1li3: "وفّر وقت الطبخ بدون التضحية بالطعم",
         book1li4: "تعلم كيف تأكل بذكاء بدون أنظمة قاسية",
@@ -350,7 +350,7 @@ let lang = {
         booksDesc: "Stop wasting time on random workouts, fake fitness advice, and useless supplements. Get real knowledge built from years of coaching experience to help you transform your body faster.",
         badge1: "BEGINNER",
         book1title: "Recipe Mastery Book",
-        book1li1: "100+ High-Protein Recipes For Real Results",
+        book1li1: "50+ High-Protein Recipes For Real Results",
         book1li2: "Easy Meals For Fat Loss & Muscle Growth",
         book1li3: "Save Time Cooking Without Sacrificing Taste",
         book1li4: "Learn How To Eat Smart Without Strict Diets",
