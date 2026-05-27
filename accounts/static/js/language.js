@@ -233,7 +233,7 @@ let lang = {
         pricingpackage1: "1 Month / $50",
 
         pricingtitle2: "TRANSFORMATION PACKAGE",
-        pricingpackage2: "3 Months / $149",
+        pricingpackage2: "3 Months / $100",
 
         pricingtitle3: "PERSONAL COACHING",
         pricingpackage3: "1500 SAR / Month",
