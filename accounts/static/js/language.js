@@ -31,7 +31,7 @@ let lang = {
         pricingpackage2: "3 أشهر / 100$",
 
         pricingtitle3: "التدريب الشخصي",
-        pricingpackage3: "1500 ريال / شهريًا",
+        pricingpackage3: "شهر / 400$",
 
         button3: "اشترك الآن",
 
@@ -205,6 +205,30 @@ let lang = {
         arabicVersion: "🇪🇬 النسخة العربية",
 
         englishVersion: "🇺🇸 النسخة الإنجليزية",
+        toolsMini: "أدوات لياقة ذكية",
+        toolsTitle: "حاسبات التغذية المتقدمة",
+        toolsText: "حاسبات ذكية احترافية تساعد الرياضيين والمدربين والعملاء على استبدال الأطعمة بدقة، وتوفير الوقت، وبناء أنظمة غذائية مرنة فورًا.",
+
+        bestSeller: "الأكثر مبيعًا",
+        newTool: "أداة جديدة",
+
+        proteinTitle: "حاسبة استبدال البروتين",
+        proteinDesc: "استبدل مصادر البروتين فورًا بحسابات دقيقة بالجرام مع الحفاظ على نفس كمية البروتين في نظامك الغذائي.",
+
+        proteinF1: "توفير ساعات من الحسابات اليدوية",
+        proteinF2: "نظام دقيق لاستبدال البروتين",
+        proteinF3: "مثالي للرياضيين والمدربين أونلاين",
+        proteinF4: "واجهة سهلة ومتوافقة مع الهاتف",
+
+        caloriesTitle: "حاسبة استبدال السعرات",
+        caloriesDesc: "استبدل الوجبات والأطعمة مع الحفاظ على نفس السعرات لبناء أنظمة غذائية مرنة ودقيقة.",
+
+        caloriesF1: "مرونة في استبدال الوجبات",
+        caloriesF2: "تخطيط أسرع للنظام الغذائي",
+        caloriesF3: "توازن ذكي للسعرات",
+        caloriesF4: "مثالي للأنظمة الغذائية وخطط الوجبات",
+
+        getAccess: "احصل على الوصول"
     },
 
     en: {
@@ -236,7 +260,7 @@ let lang = {
         pricingpackage2: "3 Months / $100",
 
         pricingtitle3: "PERSONAL COACHING",
-        pricingpackage3: "1500 SAR / Month",
+        pricingpackage3: "Month / $400",
 
         button3: "Purchase Now",
 
@@ -382,6 +406,30 @@ let lang = {
         arabicVersion: "🇪🇬 Arabic Version",
         englishVersion: "🇺🇸 English Version",
         booksnav: "Books",
+        toolsMini: "SMART FITNESS TOOLS",
+        toolsTitle: "Advanced Nutrition Calculators",
+        toolsText: "Professional smart calculators designed to help athletes, coaches, and fitness clients replace foods accurately, save time, and build flexible nutrition plans instantly.",
+
+        bestSeller: "BEST SELLER",
+        newTool: "NEW TOOL",
+
+        proteinTitle: "Protein Replacement Calculator",
+        proteinDesc: "Instantly replace protein foods with exact gram calculations while keeping the same protein value in your meal plan.",
+
+        proteinF1: "Save hours of manual calculations",
+        proteinF2: "Accurate protein replacement system",
+        proteinF3: "Perfect for athletes & online coaches",
+        proteinF4: "Easy and mobile friendly interface",
+
+        caloriesTitle: "Calories Replacement Calculator",
+        caloriesDesc: "Replace meals and foods while maintaining the same calories to create flexible and accurate nutrition plans.",
+
+        caloriesF1: "Flexible meal replacements",
+        caloriesF2: "Faster nutrition planning",
+        caloriesF3: "Smart calorie balancing",
+        caloriesF4: "Ideal for diet systems & meal plans",
+
+        getAccess: "Get Access"
     }
 };
 document.addEventListener("DOMContentLoaded", () => {
