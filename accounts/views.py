@@ -27,12 +27,22 @@ def second(request):
 def book(request):
     return render(request, 'accounts/book.html')
 
+def protein(request):
+    return render(request, 'accounts/protein.html')
 
+
+def calories(request):
+    return render(request, 'accounts/calories.html')
 # =========================
 # تحديد الدولة والعملة
 # =========================
 
+def protein_en(request):
+    return render(request, 'accounts/proteinen.html')
 
+
+def calories_en(request):
+    return render(request, 'accounts/caloriesen.html')
 
 
 

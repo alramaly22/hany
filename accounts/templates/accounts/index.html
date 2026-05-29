@@ -713,7 +713,7 @@
                     </h1>
 
                     <h2 data-lang="pricingpackage3" class="pricing__number">
-                        1500 SAR / Month
+                        Month / $400
                     </h2>
                 </header>
 
@@ -952,6 +952,168 @@
 
     </div>
 </section>
+
+<section class="tools section" id="tools">
+
+    <div class="tools__bg"></div>
+
+    <div class="container">
+
+        <div class="tools__top">
+
+            <div class="tools__textContent">
+
+                <span class="tools__mini" data-lang="toolsMini">
+                    SMART FITNESS TOOLS
+                </span>
+
+                <h2 class="section__title" data-lang="toolsTitle">
+                    Advanced Nutrition Calculators
+                </h2>
+
+                <p class="tools__text" data-lang="toolsText">
+                    Professional smart calculators designed to help athletes,
+                    coaches, and fitness clients replace foods accurately,
+                    save time, and build flexible nutrition plans instantly.
+                </p>
+
+            </div>
+
+            <div class="tools__visuals">
+
+                <div class="tools__img tools__img--1">
+                    <img src="{% static 'images/testo/protiencalc3.png' %}" alt="">
+                </div>
+
+                <div class="tools__img tools__img--2">
+                    <img src="{% static 'images/testo/protiensectioncalc1.png' %}" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tools__wrapper">
+
+            <!-- PROTEIN -->
+            <article class="tool__card">
+
+                <div class="tool__badge" data-lang="bestSeller">
+                    BEST SELLER
+                </div>
+
+                <div class="tool__image">
+                    <img src="{% static 'images/testo/protiensectioncalc1.png' %}" alt="">
+                </div>
+
+                <div class="tool__content">
+
+                    <div class="tool__price">
+                        <span>$10</span>
+                    </div>
+
+                    <h3 data-lang="proteinTitle">
+                        Protein Replacement Calculator
+                    </h3>
+
+                    <p data-lang="proteinDesc">
+                        Instantly replace protein foods with exact gram calculations
+                        while keeping the same protein value in your meal plan.
+                    </p>
+
+                    <ul class="tool__features">
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="proteinF1"> Save hours of manual calculations</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="proteinF2"> Accurate protein replacement system</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="proteinF3"> Perfect for athletes & online coaches</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="proteinF4"> Easy and mobile friendly interface</p>
+                        </li >
+
+                    </ul>
+
+                   <a href="javascript:void(0)"  data-lang="getAccess"
+   class="tool__button" 
+   onclick="openPaymentModal('protein')">
+    Get Access
+    {% comment %} <i class="ri-arrow-right-up-line"></i> {% endcomment %}
+</a>
+
+                </div>
+
+            </article>
+
+            <!-- CALORIES -->
+            <article class="tool__card">
+
+                <div class="tool__badge orange" data-lang="newTool">
+                    NEW TOOL
+                </div>
+
+                <div class="tool__image">
+                    <img src="{% static 'images/testo/protiensectioncalc2.png' %}" alt="">
+                </div>
+
+                <div class="tool__content">
+
+                    <div class="tool__price">
+                        <span>$10</span>
+                    </div>
+
+                    <h3 data-lang="caloriesTitle">
+                        Calories Replacement Calculator
+                    </h3>
+
+                    <p data-lang="caloriesDesc">
+                        Replace meals and foods while maintaining the same calories
+                        to create flexible and accurate nutrition plans.
+                    </p>
+
+                    <ul class="tool__features">
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i> <P data-lang="caloriesF1">Flexible meal replacements</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="caloriesF2"> Faster nutrition planning</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i> <P data-lang="caloriesF3">Smart calorie balancing</p>
+                        </li>
+
+                        <li class="liop">
+                            <i class="ri-check-line"></i><P data-lang="caloriesF4"> Ideal for diet systems & meal plans</p>
+                        </li>
+
+                    </ul>
+
+                    <a href="javascript:void(0)" data-lang="getAccess" 
+   class="tool__button" 
+   onclick="openPaymentModal('calories')">
+    Get Access
+    {% comment %} <i class="ri-arrow-right-up-line"></i> {% endcomment %}
+</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
     </main>
 
  <!--==================== FOOTER ====================-->
@@ -1106,7 +1268,23 @@
     </p>
 
 </footer>
+<div id="paymentModal" class="payment-modal">
+  <div class="payment-box">
 
+    <span class="close" onclick="closePaymentModal()">×</span>
+
+    <h3>Select Language</h3>
+
+    <button onclick="goToPayment('ar')">
+      🇪🇬 Arabic
+    </button>
+
+    <button onclick="goToPayment('en')">
+      🇬🇧 English
+    </button>
+
+  </div>
+</div>
   <!--=============== SCROLL UP ===============-->
 <a href="{% url 'index' %}#home" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-double-fill"></i>
@@ -1124,14 +1302,40 @@
         }
     })
 </script>
+<script>
+let currentProduct = null;
 
+const links = {
+    protein: {
+        ar: "https://app.fawaterk.com/paymentRequest/show/40698",
+        en: "https://app.fawaterk.com/paymentRequest/show/40697"
+    },
+    calories: {
+        ar: "https://app.fawaterk.com/paymentRequest/show/40699",
+        en: "https://app.fawaterk.com/paymentRequest/show/40696"
+    }
+};
+
+function openPaymentModal(product) {
+    currentProduct = product;
+    document.getElementById("paymentModal").style.display = "flex";
+}
+
+function closePaymentModal() {
+    document.getElementById("paymentModal").style.display = "none";
+}
+
+function goToPayment(lang) {
+    window.location.href = links[currentProduct][lang];
+}
+</script>
 <!--========== SCRIPTS ==========-->
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
 
 <!--=============== SCROLL / ICONS ===============-->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> {% endcomment %}
 
 <script type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
