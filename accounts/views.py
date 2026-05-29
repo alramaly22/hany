@@ -37,11 +37,11 @@ def calories(request):
 # تحديد الدولة والعملة
 # =========================
 
-def protein_en(request):
+def proteinen(request):
     return render(request, 'accounts/proteinen.html')
 
 
-def calories_en(request):
+def caloriesen(request):
     return render(request, 'accounts/caloriesen.html')
 
 
