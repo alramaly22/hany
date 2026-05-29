@@ -24,8 +24,8 @@ urlpatterns = [
     # =========================
     # English pages (NEW)
     # =========================
-    path('protein-en/', views.protein_en, name='protein_en'),
-    path('calories-en/', views.calories_en, name='calories_en'),
+    path('proteinen/', views.proteinen, name='proteinen'),
+    path('caloriesen/', views.caloriesen, name='caloriesen'),
 
     path('webhook/paid/', views.paid_webhook, name='paid_webhook'),
 
