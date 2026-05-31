@@ -3651,6 +3651,12 @@ hr {
     opacity: 1;
 }
 
+.moalramly {
+    color: var(--container-color);
+    font-weight: var(--font-bold);
+    font-family: fangsong;
+}
+
 
 /*=============== SCROLL UP ===============*/
 
