@@ -257,6 +257,84 @@
           </article>
         </div>
       </section>
+{% comment %} sss {% endcomment %}
+        <!-- ================= Work ============== -->
+        <section class="work section" id="work">
+            <h2 class="section__title" data-lang="worksetiontitle">
+                Recipes You'll Actually Enjoy
+            </h2>
+            <div class="work__container container grid">
+                <div class="work__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="work__card swiper-slide">
+                            <a href="#" target="_blank" class="work__link">
+                                <img src="{% static 'images/testo/lastfood1.jpeg' %}" alt="" class="work__img">
+                                <div class="work__arrow">
+                                    <i class="ri-restaurant-fill"></i>
+                                </div>
+                            </a>
+                            <div class="work__data">
+                                <span class="work__number">01</span>
+                                <h3 class="work__name">Restaurant Website</h3>
+                                <p class="work__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facilis est cupiditate? Totam, quasi. Unde nostrum consequuntur accusamus veritatis.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <a href="#" target="_blank" class="work__link">
+                                <img src="{% static 'images/testo/lastfood2.jpeg' %}" alt="" class="work__img">
+                                <div class="work__arrow">
+                                    <i class="ri-restaurant-fill"></i>
+                                </div>
+                            </a>
+                            <div class="work__data">
+                                <span class="work__number">01</span>
+                                <h3 class="work__name">Restaurant Website</h3>
+                                <p class="work__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facilis est cupiditate? Totam, quasi. Unde nostrum consequuntur accusamus veritatis.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <a href="#" target="_blank" class="work__link">
+                                <img src="{% static 'images/testo/lastfood3.jpeg' %}" alt="" class="work__img">
+                                <div class="work__arrow">
+                                    <i class="ri-restaurant-fill"></i>
+                                </div>
+                            </a>
+                            <div class="work__data">
+                                <span class="work__number">01</span>
+                                <h3 class="work__name">Restaurant Website</h3>
+                                <p class="work__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facilis est cupiditate? Totam, quasi. Unde nostrum consequuntur accusamus veritatis.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <a href="#" target="_blank" class="work__link">
+                                <img src="{% static 'images/testo/lastfood4.jpeg' %}" alt="" class="work__img">
+                                <div class="work__arrow">
+                                    <i class="ri-restaurant-fill"></i>
+                                </div>
+                            </a>
+                            <div class="work__data">
+                                <span class="work__number">01</span>
+                                <h3 class="work__name">Restaurant Website</h3>
+                                <p class="work__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facilis est cupiditate? Totam, quasi. Unde nostrum consequuntur accusamus veritatis.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
       <!-- Featured Books -->
       <section class="featured section" id="featured">
@@ -419,15 +497,8 @@
       </p>
 
       <div class="mk">
-        <button
-          class="button button__flex pricing__button"
-          data-book="Fitness Transformation System"
-          data-description="Select your preferred language before payment and receive your digital fitness system instantly."
-          data-ar="YOUR_ARABIC_LINK"
-          data-en="YOUR_ENGLISH_LINK"
-          data-lang="purchaseBtn">
-          Purchase Now
-        </button>
+      <a href="{% url 'index' %}#pricing" class="button" data-lang="purchaseBtn">Purchase Now</a>
+
       </div>
     </div>
 
@@ -537,9 +608,12 @@
   </p>
 </footer>
 
- <!--=============== SCROLL UP ===============-->
-<a href="#" class="scrollup" id="scroll-up">
-  <i class="ri-arrow-up-double-fill"></i>
+<a href="https://wa.me/201208425542" class="whatsapp">
+      <i class="ri-whatsapp-fill"></i>
+    </a>
+  <!--=============== SCROLL UP ===============-->
+<a href="{% url 'index' %}#home" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-double-fill"></i>
 </a>
 
 <script>

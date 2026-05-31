@@ -32,7 +32,27 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/master.css' %}">
-
+ <style>
+        #language-selector {
+            appearance: none;
+            font-weight: bolder;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-size: cover;
+            background-position: center;
+            color: var(--body-color);
+            border: none;
+            background: var(--first-color);
+            padding: 10px;
+            border-radius: 1rem 0;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        #language-selector option {
+            color: #000;
+        }
+    </style>
     <title>Pricing Hany</title>
 </head>
 
@@ -390,7 +410,7 @@
 
 
 <!--==================== CONTACT ====================-->
-<section class="contact section" id="contact">
+{% comment %} <section class="contact section" id="contact">
 
     <div class="contact__container grid">
 
@@ -432,37 +452,113 @@
         </div>
 
     </div>
-</section>
+</section> {% endcomment %}
 
 
-<!--==================== FAQ ====================-->
+<!--==================== accordion ====================-->
 <section class="accordion container" id="accordion">
 
-    <h2 class="section__title" data-lang="qustion">
+    <h2 data-lang="qustion" class="section__title">
         Frequently Asked Questions
     </h2>
 
     <div class="accordion__container">
 
         <div class="accordion__item">
-
             <header class="accordion__header">
-                <i class="bx bx-plus"></i>
-                <h3 data-lang="qustion1">
-                    How fast results?
+                <i class='bx bx-plus accordion__icon'></i>
+
+                <h3 data-lang="qustion1" class="accordion__title">
+                    How fast can I start seeing real results?
                 </h3>
             </header>
 
             <div class="accordion__content">
-                <p data-lang="ansswer1">
-                    Results depend on consistency.
+                <p data-lang="ansswer1" class="accordion__description">
+                    Results depend on your consistency, but most clients begin
+                    noticing real physical changes within the first few weeks
+                    thanks to structured training, nutrition guidance,
+                    and continuous follow-up.
                 </p>
             </div>
+        </div>
 
+        <div class="accordion__item">
+            <header class="accordion__header">
+                <i class='bx bx-plus accordion__icon'></i>
+
+                <h3 data-lang="qustion2" class="accordion__title">
+                    Why train with Coach Hany?
+                </h3>
+            </header>
+
+            <div class="accordion__content">
+                <p data-lang="ansswer2" class="accordion__description">
+                    With over 8 years of coaching experience in Riyadh and
+                    more than 500 successful client transformations,
+                    Coach Hany combines real competitive bodybuilding
+                    experience with practical coaching systems that
+                    deliver measurable results.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion__item">
+            <header class="accordion__header">
+                <i class='bx bx-plus accordion__icon'></i>
+
+                <h3 data-lang="qustion3" class="accordion__title">
+                    Will I get personal follow-up during my program?
+                </h3>
+            </header>
+
+            <div class="accordion__content">
+                <p data-lang="ansswer3" class="accordion__description">
+                    Yes. Every client receives consistent follow-up,
+                    progress tracking, and program adjustments based on
+                    results to ensure steady improvement throughout the journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion__item">
+            <header class="accordion__header">
+                <i class='bx bx-plus accordion__icon'></i>
+
+                <h3 data-lang="qustion4" class="accordion__title">
+                    Is this program suitable for beginners?
+                </h3>
+            </header>
+
+            <div class="accordion__content">
+                <p data-lang="ansswer4" class="accordion__description">
+                    Absolutely. Whether you're just starting or already experienced,
+                    each training and nutrition plan is customized to match your
+                    level, lifestyle, and fitness goals.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion__item">
+            <header class="accordion__header">
+                <i class='bx bx-plus accordion__icon'></i>
+
+                <h3 data-lang="qustion5" class="accordion__title">
+                    What will I get from the Fitness eBooks?
+                </h3>
+            </header>
+
+            <div class="accordion__content">
+                <p data-lang="ansswer5" class="accordion__description">
+                    You’ll get practical workout systems and nutrition guides
+                    packed with easy-to-follow strategies, high-protein recipes,
+                    and structured plans designed to help you build muscle,
+                    burn fat, and stay consistent.
+                </p>
+            </div>
         </div>
 
     </div>
-
 </section>
     </main>
 
@@ -600,8 +696,11 @@
 
 </footer>
 
-<!--==================== SCROLL UP ====================-->
-<a href="#" class="scrollup" id="scroll-up">
+<a href="https://wa.me/201208425542" class="whatsapp">
+      <i class="ri-whatsapp-fill"></i>
+    </a>
+  <!--=============== SCROLL UP ===============-->
+<a href="{% url 'index' %}#home" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-double-fill"></i>
 </a>
 
