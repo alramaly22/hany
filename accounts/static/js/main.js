@@ -239,7 +239,22 @@ let swiperFeatured = new Swiper('.featured__swiper', {
 
 /*=============== Calc ===============*/
 
-
+/*=============== Calc ===============*/
+const swiperWork = new Swiper('.work__swiper', {
+    loop: true,
+    spaceBetween: 24,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    speed: 600,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    }
+});
 
 // const calories = document.querySelector(".bmr-calculator .result .calories");
 // const calculateBtn = document.querySelector(

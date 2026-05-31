@@ -2340,36 +2340,6 @@ hr {
 }
 
 
-/*=============== SCROLL UP ===============*/
-
-
-/* srcoll up */
-
-.scrollup {
-    position: fixed;
-    background: var(--gradient-color2);
-    right: 1rem;
-    bottom: -30%;
-    font-size: 1.25rem;
-    padding: .5rem;
-    display: inline-flex;
-    border-radius: 1rem 0;
-    /* opacity: .8; */
-    z-index: 1515151;
-    transition: .4s;
-    color: black;
-}
-
-.scrollup:hover {
-    background-color: var(--first-color);
-    opacity: 1;
-}
-
-.show-scroll {
-    bottom: 5rem;
-}
-
-
 /*=============== BREAKPOINTS ===============*/
 
 
@@ -3542,4 +3512,172 @@ hr {
 .liop {
     display: flex;
     align-items: baseline;
+}
+
+
+/* ======================  Work ============= */
+
+.work__card {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1rem 1rem 0rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.work__link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    z-index: 5;
+}
+
+.work__data {
+    z-index: 5;
+    display: none;
+}
+
+.work__img {
+    border-radius: 1rem;
+    transition: transform 0.4s;
+}
+
+.work__arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.work__number {
+    display: block;
+    font: var(--font-medium) var(--biggest-font-size) var(--second-font);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.work__name {
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    margin-bottom: 0.5rem;
+}
+
+.work__card:hover .work__img {
+    transform: scale(1.1);
+}
+
+.work__card:hover .work__arrow {
+    opacity: 1;
+}
+
+.work__card .blob-big {
+    top: 2rem;
+    right: -2rem;
+    z-index: 1;
+}
+
+
+/* swiper class */
+
+.work__swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+
+.work .swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.work .swiper-pagination-bullet {
+    background-color: var(--first-color);
+    transition: opacity 0.4s;
+}
+
+@media (width>=540px) {
+    .work__card {
+        width: 350px;
+    }
+}
+
+@media (width>=1150px) {
+    .work__card {
+        width: 440px;
+        border-radius: 3rem;
+        padding: 1.5rem 1.5rem 1rem;
+    }
+    .work__container {
+        max-width: 1380px;
+    }
+    .work__img {
+        border-radius: 2rem;
+    }
+    .work__number {
+        font-size: var(--biggest-font-size);
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: #35dd54;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 4rem 4rem 0 4rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    z-index: 9999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.whatsapp:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* srcoll up */
+
+.scrollup {
+    position: fixed;
+    background: var(--gradient-color2);
+    left: 1rem;
+    bottom: -30%;
+    font-size: 1.25rem;
+    padding: .5rem;
+    display: inline-flex;
+    border-radius: 1rem 0;
+    /* opacity: .8; */
+    z-index: 1515151;
+    transition: .4s;
+    color: black;
+    width: max-content;
+}
+
+.scrollup:hover {
+    background-color: var(--first-color);
+    opacity: 1;
+}
+
+.show-scroll {
+    bottom: 5rem;
 }

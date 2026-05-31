@@ -228,7 +228,8 @@ let lang = {
         caloriesF3: "توازن ذكي للسعرات",
         caloriesF4: "مثالي للأنظمة الغذائية وخطط الوجبات",
 
-        getAccess: "احصل على الوصول"
+        getAccess: "احصل على الوصول",
+        worksetiontitle: "وصفات صحية بطعم ستستمتع به فعلاً",
     },
 
     en: {
@@ -429,7 +430,8 @@ let lang = {
         caloriesF3: "Smart calorie balancing",
         caloriesF4: "Ideal for diet systems & meal plans",
 
-        getAccess: "Get Access"
+        getAccess: "Get Access",
+        worksetiontitle: "Recipes You'll Actually Enjoy",
     }
 };
 document.addEventListener("DOMContentLoaded", () => {
