@@ -46,8 +46,11 @@ html {
   max-width: 124rem;
   padding: 0 1rem;
   margin: 0 auto;
+  text-align: center;
 }
-
+.section__titles{
+  text-align: center;
+}
 .text-center {
   text-align: center;
 }

@@ -230,6 +230,32 @@ let lang = {
 
         getAccess: "احصل على الوصول",
         worksetiontitle: "وصفات صحية بطعم ستستمتع به فعلاً",
+               book3title:"دليل التمارين الرياضية",
+book3li1:"أتقن أساسيات التدريب الرياضي بطريقة صحيحة",
+book3li2:"تعرّف على أفضل أنظمة التدريب المناسبة لكل هدف",
+book3li3:"شرح كامل لأنظمة Full Body و Upper/Lower و Push Pull Legs وغيرها",
+book3li4:"حسّن الأداء، والتعافي، ومبدأ الزيادة التدريجية في التدريب",
+book3li5:"توصيات احترافية وخبرة مباشرة من الكابتن هاني",
+
+book4title:"دليل الستيرويدات",
+book4li1:"افهم العلم الحقيقي وراء منشطات تحسين الأداء",
+book4li2:"تعرّف على الأنواع المختلفة واستخداماتها وأشهر المركبات",
+book4li3:"تعرف على المخاطر المحتملة والآثار الجانبية والاعتبارات الصحية",
+book4li4:"تجنب أشهر أخطاء المبتدئين والمعلومات المضللة",
+book4li5:"معلومات تعليمية مبنية على الأبحاث والخبرة العملية في التدريب",
+
+pricing3monthssar:"3 أشهر / 399 ريال سعودي",
+pricing1monthssar:"شهر واحد / 199 ريال سعودي",
+pricing2monthssar:"شهران / 299 ريال سعودي",
+
+pri82:"برنامج تدريبي مخصص بالكامل",
+pri83:"خطة تغذية مخصصة حسب هدفك",
+pri84:"متابعة أسبوعية لتقدمك",
+pri85:"دعم يومي عبر واتساب",
+pri86:"مراجعة الأداء وتصحيح التكنيك",
+pri87:"تعديلات غير محدودة على البرنامج",
+pri88:"إرشادات كاملة للمكملات الغذائية",
+pri89:"دعم شامل لتحقيق أفضل تحول لجسمك",
     },
 
     en: {
@@ -432,6 +458,34 @@ let lang = {
 
         getAccess: "Get Access",
         worksetiontitle: "Recipes You'll Actually Enjoy",
+// 
+        book3title:"Exercise Training",
+        book3li1:"Master The Fundamentals Of Effective Training",
+        book3li2:"Learn The Best Training Splits For Every Goal",
+        book3li3:"Full Body, Upper/Lower, Push Pull Legs & More",
+        book3li4:"Improve Technique, Recovery & Progressive Overload",
+        book3li5:"Coach Hany's Professional Recommendations",
+        book4title:"Steroids Guide",
+        book4li1:"Understand The Science Behind Performance Enhancing Drugs",
+        book4li2:"Learn Different Types, Uses & Common Compounds",
+        book4li3:"Potential Risks, Side Effects & Health Considerations",
+        book4li4:"Avoid Common Beginner Mistakes & Misinformation",
+        book4li5:"Educational Information Based On Research & Coaching Experience",
+        
+
+        pricing3monthssar:"3 Months / 399 SAR",
+        pricing1monthssar:"1 Month / 199 SAR",
+        pricing2monthssar:"2 Months / 299 SAR",
+        pri82:"Personalized Workout Program",
+        pri83:"Customized Nutrition Plan",
+        pri84:"Weekly Progress Check-ins",
+        pri85:"Daily WhatsApp Support",
+        pri86:"Form & Technique Review",
+        pri87:"Unlimited Plan Adjustments",
+        pri88:"Supplement Guidance",
+        pri89:"Full Body Transformation Support",
+        
+        
     }
 };
 document.addEventListener("DOMContentLoaded", () => {
