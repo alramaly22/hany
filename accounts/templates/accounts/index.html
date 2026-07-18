@@ -338,6 +338,8 @@
 
         <div class="home__data">
 
+  <div class="home__content-box">
+
             <h1 class="home__title">
 
                 <p data-lang="home1">
@@ -356,6 +358,8 @@
                 Build muscle, burn fat, and unlock your best physique with expert coaching.
 
             </p>
+
+  </div>
 
             <a data-lang="button"
                 href="{% url 'pricing' %}"
@@ -608,8 +612,8 @@
                         STARTER PACKAGE
                     </h1>
 
-                    <h2 data-lang="pricingpackage1" class="pricing__number">
-                        Month / $50
+                    <h2 data-lang="pricing1monthssar" class="pricing__number">
+                        1 Month / 199 SAR
                     </h2>
                 </header>
 
@@ -658,8 +662,8 @@
                         TRANSFORMATION PACKAGE
                     </h1>
 
-                    <h2 data-lang="pricingpackage2" class="pricing__number">
-                        3 Months / $100
+                    <h2 data-lang="pricing2monthssar" class="pricing__number">
+                        2 Months / 299 SAR
                     </h2>
                 </header>
 
@@ -712,47 +716,52 @@
                         PERSONAL COACHING
                     </h1>
 
-                    <h2 data-lang="pricingpackage3" class="pricing__number">
-                        Month / $400
+                    <h2 data-lang="pricing3monthssar" class="pricing__number">
+                        3 Months / 399 SAR
                     </h2>
                 </header>
 
                 <ul class="pricing__list">
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli31">Home or Gym Training</p>
+                        <p data-lang="pri82">Personalized Workout Program</p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli2289">12 Sessions / Month</p>
+                        <p data-lang="pri83">Customized Nutrition Plan</p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli33">1-on-1 Coaching</p>
+                        <p data-lang="pri84">Weekly Progress Check-ins</p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli4">Full Nutrition Plan</p>
+                        <p data-lang="pri85">Daily WhatsApp Support</p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli5">Daily Support</p>
+                        <p data-lang="pri86">Form & Technique Review</p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli51">
-                            <b>Body Tracking</b>
+                        <p data-lang="pri87">
+                            <b>Unlimited Plan Adjustments</b>
                         </p>
                     </li>
 
                     <li class="pricing__item">
                         <i class="ri-checkbox-circle-line"></i>
-                        <p data-lang="pricinglli52">Free Trial Session</p>
+                        <p data-lang="pri88">Supplement Guidance</p>
+                    </li>
+                    
+                    <li class="pricing__item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        <p data-lang="pri89">Full Body Transformation Support</p>
                     </li>
                 </ul>
 
@@ -773,10 +782,13 @@
     <section class="nutrantion section container" id="calc">
         <div class="nutrantion__container grid">
 
-            <img src="{% static 'images/testo/bookfinal.jpeg' %}"
-                 alt=""
-                 class="nutrantion__img">
+<a style="order: 1;" href="{% url 'book' %}">
 
+    <img
+        src="{% static 'images/testo/bookfinal.jpeg' %}"
+        class="nutrantion__img">
+
+</a>
             <div class="nutrantion__data">
 
                 <h2 class="section__title nutrantion__title">
@@ -790,7 +802,9 @@
                     fitness goals.
                 </p>
 
-                <div class="nutrantion__details">
+              <div class="nutrantion__details">
+
+                    <div class="nutrantion__details">
 
                     <div class="fle">
                         <p class="nutrantion__details-description nutrantion__details-icon">
@@ -836,6 +850,8 @@
                     </div>
 
                 </div>
+
+             </div>
 
                 <a href="{% url 'book' %}" class="button">
                     <p data-lang="button4">Get Instant Access</p>
